@@ -1,7 +1,7 @@
 // import React from "react";
 import Img from "../../assets/homePage/Section2.jpg";
 import Map from "../../assets/homePage/map.png";
-import Loire from "../../assets/homePage/loire.png";
+import Loire from "../../assets/homePage/Loire.png";
 
 const MiddleSection = () => {
   return (
