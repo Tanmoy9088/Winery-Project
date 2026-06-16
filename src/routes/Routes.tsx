@@ -5,6 +5,8 @@ import Wrapper from "../layout/Wrapper";
 import PageNotFound from "../pages/PageNotFound";
 import AboutPage from "../pages/AboutPage";
 import Shop from "../pages/Shop";
+import ContactUs from "../pages/ContactUs";
+import RegistrationPage from "../pages/RegistrationPage";
 
 const Routes = createBrowserRouter([
   {
@@ -35,7 +37,15 @@ const Routes = createBrowserRouter([
         path: "landing",
         element: <HomePage />,
       },
+      {
+        path: "pages/contactus",
+        element: <ContactUs />,
+      },
     ],
+  },
+  {
+    path: "/registration",
+    element: <RegistrationPage />,
   },
 ]);
 export default Routes;

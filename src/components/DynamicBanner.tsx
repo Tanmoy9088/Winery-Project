@@ -27,7 +27,7 @@ const DynamicBanner = () => {
               ? "Blog"
               : location.pathname === "/about"
                 ? "About"
-                : ""}
+                :  location.pathname === "/pages/contactus"?"Pages-Contact Us": location.pathname === "/pages/aboutus"?"Pages-AboutUs":""}
       </h4>
     </div>
   );

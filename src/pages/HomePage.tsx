@@ -2,6 +2,7 @@
 import Hero from "../components/homePage/Hero";
 import WineSection from "../components/homePage/WineSection";
 import MiddleSection from "../components/homePage/MiddleSection";
+import EndSection from "../components/EndSection";
 
 const HomePage = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Hero />
       <WineSection />
       <MiddleSection />
+      <EndSection />
     </>
   );
 };

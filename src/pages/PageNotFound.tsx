@@ -2,7 +2,7 @@
 
 const PageNotFound = () => {
   return (
-    <div>PageNotFound</div>
+    <div className="text-white">PageNotFound</div>
   )
 }
 

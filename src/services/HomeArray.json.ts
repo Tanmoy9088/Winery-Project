@@ -4,7 +4,7 @@ import Wine2 from "../assets/homePage/wine2.png";
 import Wine3 from "../assets/homePage/wine3.jpg";
 import Wine4 from "../assets/homePage/wine4.png";
 import Wine5 from "../assets/homePage/wine5.png";
-import type { WineHome } from "../typescript/WIneArray";
+import type { WineHome } from "../types/WIneArray";
 
 const WineArray: WineHome[] = [
   {

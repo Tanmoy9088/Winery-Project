@@ -1,5 +1,12 @@
 // import React, { useState } from "react";
 import ShopArrays from "../services/ShopArray.json";
+import Shop1 from "../assets/shop1.jpg";
+import grid1 from "../assets/gird1.jpg";
+import grid2 from "../assets/grid2.jpg";
+import grid3 from "../assets/grid3.jpg";
+import grid4 from "../assets/grid4.jpg";
+import Shop2 from "../assets/shop2.jpg";
+import { Search } from "lucide-react";
 
 const Shop = () => {
   //  const filterArray = [
@@ -29,7 +36,23 @@ const Shop = () => {
             <p>SPARKLING</p>
             <p>WINE</p>
           </div>
-          <div></div>
+          <h4 className="uppercase mb-3 mt-10">Products</h4>
+          <div className="flex flex-wrap gap-2">
+            <div className="w-32">
+              <img src={Shop1} alt="" />
+              <h5 className="uppercase bg-gradient-to-l from-white to-[#ffae5b] bg-clip-text text-transparent">
+                Wallace wine
+              </h5>
+              <p>⭐⭐⭐⭐</p>
+            </div>
+            <div className="w-32">
+              <img src={Shop2} alt="" />
+              <h5 className="uppercase bg-gradient-to-l from-white to-[#ffae5b] bg-clip-text text-transparent">
+                Wallace wine
+              </h5>
+              <p>⭐⭐⭐⭐</p>
+            </div>
+          </div>
           <div className="mt-5">
             Tags
             <p className="tracking-normal">Lorem ipsum dolor sit amet.</p>
@@ -37,8 +60,21 @@ const Shop = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ea.
             </p>
           </div>
-          <div></div>
-          <div></div>
+          <div className="mt-5">
+            Search
+            <label className="flex">
+              <input type="text" placeholder="Search" /> <Search />
+            </label>
+          </div>
+          <div className="my-5">
+            Instagram
+            <div className="w-48 grid grid-cols-2">
+              <img src={grid1} alt="" />
+              <img src={grid2} alt="" />
+              <img src={grid3} alt="" />
+              <img src={grid4} alt="" />
+            </div>
+          </div>
           <div></div>
         </div>
         <div className="lg:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-items-center gap-10  bg-zinc-900 p-10">
@@ -50,10 +86,10 @@ const Shop = () => {
               <div>
                 <img
                   src={wine.image}
-                  width="300px"
-                  height="200px"
+                  // width="300px"
+                  // height="200px"
                   alt=""
-                  className="h-[350px] md-[400px] lg:h-[500px] w-48 object-cover object-center mb-2"
+                  className="h-[250px] md-[300px] lg:h-[400px] w-48 object-contain objext-center mb-2"
                 />
               </div>
 

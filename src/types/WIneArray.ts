@@ -11,4 +11,14 @@ export interface ShopArray {
   price: number;
   image: string;
   isSold: boolean;
+  category:string[];
+}
+export interface HighlighWine {
+  id: number;
+  image: string;
+  name: string;
+  description: string;
+  date: string;
+  location: string;
+  category:string[];
 }

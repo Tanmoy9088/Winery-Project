@@ -1,12 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Ole&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ole&display=swap");
+@import url("https://googleapis.com");
 
 .ole-regular {
   font-family: "Ole", cursive;
   font-weight: 400;
   font-style: normal;
 }
+h1,
+h2,
+h3,
+h4,
+.playfair-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
 
+
+/* H1 · 56px / 3.5rem · weight 700 · letter-spacing -0.01em · line-height 1.1 */
+/* H2 · 40px / 2.5rem · weight 700 · line-height 1.2 */
+/* H3 · 28px / 1.75rem · weight 700 · line-height 1.3 */
 .dancing-script-home {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
