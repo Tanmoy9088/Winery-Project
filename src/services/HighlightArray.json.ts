@@ -2,9 +2,9 @@ import TwoGlass from "../assets/homePage/TwoGlass.jpg";
 import Sencod from "../assets/homePage/ThreeWine.jpg";
 import Third from "../assets/homePage/Catena.jpg";
 import Forth from "../assets/homePage/Premitivo.jpg";
-import type { HighlighWine } from "../types/WIneArray";
+// import type { HighlighWine } from "../types/WIneArray";
 
-export const HighlighArray: HighlighWine[] = [
+export const HighlighArray = [
   {
     id: 1,
     name: "Wine Delight",

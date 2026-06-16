@@ -3,11 +3,11 @@ import Location from "../assets/homePage/Location.jpg";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-type ContactForm = {
-  name: string;
-  email: string;
-  message: string;
-};
+// type ContactForm = {
+//   name: string;
+//   email: string;
+//   message: string  undefined ;
+// };
 const ContactUs = () => {
   const contactSchema = yup.object({
     name: yup
@@ -18,10 +18,10 @@ const ContactUs = () => {
       .string()
       .required("email is required")
       .email("Please enter a valid email"),
-    message: yup
-      .string()
-      .min(15, "sentence must be at least 15 character long"),
+    message: yup.string().required("Messeage something"),
   });
+
+  type ContactForm = yup.InferType<typeof contactSchema>;
 
   const {
     register,
@@ -36,7 +36,7 @@ const ContactUs = () => {
       message: "",
     },
   });
-  const onSubmit = (data) => {
+  const onSubmit = (data: ContactForm) => {
     console.log("FormData", data);
     alert("Thank you for contacting us");
     reset();

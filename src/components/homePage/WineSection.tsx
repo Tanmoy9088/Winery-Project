@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import{ useState } from "react";
 import type { WineHome } from "../../types/WIneArray";
 import WineArray from "../../services/HomeArray.json";
 

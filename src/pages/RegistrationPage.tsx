@@ -1,5 +1,5 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import React from "react";
+// import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import * as yup from "yup";
@@ -10,7 +10,7 @@ type RegistrationForm = {
   gender: string;
   password: string;
   confirmPassword: string;
-  term: boolean | null;
+  term: boolean ;
 };
 const RegistrationPage = () => {
   const navigation = useNavigate();
@@ -31,7 +31,7 @@ const RegistrationPage = () => {
       .string()
       .required()
       .oneOf([yup.ref("password")], "password do not match"),
-    term: yup.boolean().oneOf([true], "You must agree terms & condition"),
+    term: yup.boolean().required().oneOf([true], "You must agree terms & condition"),
   });
 
   const {
@@ -46,11 +46,11 @@ const RegistrationPage = () => {
       email: "",
       password: "",
       confirmPassword: "",
-      term: null,
+      term: false,
     },
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = (data:RegistrationForm) => {
     console.log(data);
     navigation("/home");
     reset();

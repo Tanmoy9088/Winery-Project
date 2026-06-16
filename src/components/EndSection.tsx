@@ -22,6 +22,7 @@ const EndSection = () => {
       .email("Please enter a valid email"),
     message: yup
       .string()
+      .required("message is required")
       .min(15, "sentence must be at least 15 character long"),
   });
 
